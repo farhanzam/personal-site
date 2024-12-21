@@ -1,0 +1,261 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    flex: 1 0 auto;
+}
+
+/* --- Navbar section ------------------------------------- */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1C3738;
+}
+
+.navbar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #5D8083;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Brush Script MT', cursive;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 15px;
+    margin-left: 5%;
+    transition-duration: 0.4s;
+}
+
+.navbar-logo:hover {
+    background-color: #7C9FA2;
+}
+
+.navbar-logo-text {
+    transition-duration: 0.4s;
+    padding: 19px;
+    border-radius: 50%;
+}
+
+.navbar-logo-text:hover {
+    transform: scale(1.3);
+}
+
+.navbar-options {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 10%;
+    border: #1C3738;
+    border-bottom: #FFFFFF;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.navbar-options-buttons {
+    color: #FFFFFF;
+    /* background-image: linear-gradient(#1C3738, #295051); */
+    background-color: #1C3738;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.navbar-options-buttons:hover {
+    background-color: #2b4445;
+}
+
+/* Hero section ------------------------------------- */
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    background: #1C3738;
+    height: 55vh;
+}
+
+.hero-section-text {
+    display: inline-block;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 15%;
+    color: white;
+    height: fit-content;
+    width: fit-content;    
+}
+
+.hero-section-title {
+    display: flex;
+    font-size: 50px;
+    height: fit-content;
+    width: fit-content; 
+}
+
+.hero-section-subtext {
+    display: flex;
+    font-size: 20px;
+    height: fit-content;
+    width: 90%;
+}
+
+.hero-section-profile-img {
+    height: 300px;
+    width: 400px;
+    margin-top: 5%;
+    margin-left: 10%;
+    background-color: #7C9FA2;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+/* --- About section ------------------------------------- */
+
+#about {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.about-header {
+    color: #000000;
+    padding-top: 2%;
+    font-size: 40px;
+    font-weight:bolder;
+    text-align: center;
+}
+
+.about-text-pic-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-text {
+    width: 35%;
+    margin-left: 10%;
+    font-size: 20px;
+    /* background-color: #322e2e; */
+}
+
+.about-img {
+    height: 300px;
+    width: 360px;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    background-color: #322e2e;
+}
+
+/* --- portfolio section ------------------------------------- */
+
+#portfolio {
+    background-color: #3E787A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio-header {
+    color: white;
+    padding-top: 2%;
+    font-size: 40px;
+    font-weight:bolder;
+    text-align: center;
+}
+
+.portfolio-boxes { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.portfolio-box {
+    margin: 40px;
+}
+
+.portfolio-image-box {
+    border-color: #305D5F;
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 10%;
+    height: 20vh;
+    width: 20vh;
+    margin-bottom: 15px;
+    transition-duration: 0.4s;
+}
+
+.portfolio-image-box:hover {
+    transform: scale(1.1);
+}
+
+.portfolio-image-text {
+    color: #FFFFFF;
+    font-size: 20px;
+    width: 20vh;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio-portfolio-redirect-button {
+    color: #FFFFFF;
+    background-color: #77ACA2;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.portfolio-portfolio-redirect-button:hover {
+    color: #FFFFFF;
+    background-color: #305D5F;
+    transform: scale(1.1);
+}
+
+/* --- Footer section ------------------------------------- */
+
+.footer {
+    background-color: #1C3738;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70vw;
+}
+
+.footer-contact-icons {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
