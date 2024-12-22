@@ -34,18 +34,10 @@ body {
     transition-duration: 0.4s;
 }
 
-.navbar-logo:hover {
-    background-color: #7C9FA2;
-}
-
 .navbar-logo-text {
     transition-duration: 0.4s;
     padding: 19px;
     border-radius: 50%;
-}
-
-.navbar-logo-text:hover {
-    transform: scale(1.3);
 }
 
 .navbar-options {
@@ -61,7 +53,6 @@ body {
 
 .navbar-options-buttons {
     color: #FFFFFF;
-    /* background-image: linear-gradient(#1C3738, #295051); */
     background-color: #1C3738;
     font-size: 25px;
     text-decoration: none;
@@ -150,7 +141,6 @@ body {
     width: 35%;
     margin-left: 10%;
     font-size: 20px;
-    /* background-color: #322e2e; */
 }
 
 .about-img {
@@ -199,10 +189,13 @@ body {
     width: 20vh;
     margin-bottom: 15px;
     transition-duration: 0.4s;
+    position: relative;
+    overflow: hidden;
 }
 
-.portfolio-image-box:hover {
-    transform: scale(1.1);
+.portfolio-image {
+    height: 100%;
+    width: 150%;
 }
 
 .portfolio-image-text {
@@ -214,30 +207,22 @@ body {
     margin: 0;
 }
 
-.portfolio-portfolio-redirect-button {
+.portfolio-resume-button {
     color: #FFFFFF;
-    background-color: #77ACA2;
     text-decoration: none;
     font-size: 25px;
-    padding: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 20px;
     margin-bottom: 50px;
     border: none;
-    transition-duration: 0.4s;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
-.portfolio-portfolio-redirect-button:hover {
-    color: #FFFFFF;
-    background-color: #305D5F;
-    transform: scale(1.1);
+.portfolio-resume-button:hover {
+    text-decoration: underline;
 }
 
-/* --- Footer section ------------------------------------- */
+/* --- Footer/Contact section ------------------------------------- */
 
-.footer {
+#contact {
     background-color: #1C3738;
     display: flex;
     flex-direction: row;
