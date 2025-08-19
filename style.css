@@ -31,6 +31,18 @@ body {
     text-decoration: none;
 }
 
+.resume-container {
+    display: flex;
+    justify-content: center;   /* centers all items horizontally by default */
+    position: relative;        /* allows absolute positioning inside */
+    margin: 10px 0 0 0;
+}
+
+.download-icon {
+    position: absolute;
+    right: 0;   /* stick to the far right */    
+}
+
 .link:hover {
     text-decoration: underline;
 }
