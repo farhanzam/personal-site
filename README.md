@@ -1,2 +1,2 @@
-# personal-site
-Personal Website
+# Personal Site
+link: [text](https://farhanzaman.net/)
