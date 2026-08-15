@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FZ">
+  <rect width="64" height="64" rx="14" fill="#171715"/>
+  <text x="32" y="41" fill="#fffdf8" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="-2" text-anchor="middle">FZ</text>
+  <circle cx="53" cy="47" r="3" fill="#e8662a"/>
+</svg>
