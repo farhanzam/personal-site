@@ -682,7 +682,8 @@ h3 {
 
 .experience-controls button:hover,
 .experience-controls button:focus-visible {
-  background: var(--ink);
+  border-color: var(--orange-dark);
+  background: var(--orange-dark);
   color: var(--white);
 }
 
@@ -763,8 +764,14 @@ h3 {
 }
 
 .experience-mark-ls {
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.92);
+  padding: 0;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  background: #355989;
+}
+
+.experience-mark-ls img {
+  object-fit: cover;
 }
 
 .experience-mark-mg {
@@ -804,6 +811,7 @@ h3 {
 }
 
 .tech-icon {
+  position: relative;
   display: grid;
   width: 42px;
   height: 42px;
@@ -813,6 +821,30 @@ h3 {
   background: rgba(255, 255, 255, 0.75);
   box-shadow: 0 3px 8px rgba(22, 40, 56, 0.08);
   place-items: center;
+}
+
+.tech-icon::after {
+  position: absolute;
+  bottom: calc(100% + 0.5rem);
+  left: 50%;
+  z-index: 5;
+  padding: 0.35rem 0.55rem;
+  border-radius: 0.25rem;
+  background: var(--ink);
+  color: var(--white);
+  content: attr(data-tooltip);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  line-height: 1;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.tech-icon:hover::after,
+.tech-icon:focus-visible::after {
+  opacity: 1;
 }
 
 .tech-icon img {
@@ -906,6 +938,10 @@ h3 {
   font-weight: 800;
   line-height: 0.82;
   letter-spacing: -0.02em;
+}
+
+.studio-copy h2 span {
+  color: #d9f56f;
 }
 
 .studio-lead {
